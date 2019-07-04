@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "start": "webpack -w"
+    "start": "webpack -w",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -33,6 +35,8 @@
     "graphql-tag": "^1.1.2",
     "lodash": "^4.17.2",
     "react-redux": "^4.4.6",
-    "uuid": "^3.0.1"
-  }
+    "uuid": "^3.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
